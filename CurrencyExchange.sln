@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange.BusinessLayer", "CurrencyExchange.BusinessLayer\CurrencyExchange.BusinessLayer.csproj", "{A233F5B1-95FE-4B55-8959-71989612C019}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B5A1A909-48BA-4C54-B39F-33AED32875A5} = {B5A1A909-48BA-4C54-B39F-33AED32875A5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange.UI", "CurrencyExchange.UI\CurrencyExchange.UI.csproj", "{154C99D5-5790-400E-9EB0-1EF2F83C2062}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A233F5B1-95FE-4B55-8959-71989612C019} = {A233F5B1-95FE-4B55-8959-71989612C019}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchange.Core", "CurrencyExchange.Core\CurrencyExchange.Core.csproj", "{B5A1A909-48BA-4C54-B39F-33AED32875A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A233F5B1-95FE-4B55-8959-71989612C019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A233F5B1-95FE-4B55-8959-71989612C019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A233F5B1-95FE-4B55-8959-71989612C019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A233F5B1-95FE-4B55-8959-71989612C019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154C99D5-5790-400E-9EB0-1EF2F83C2062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154C99D5-5790-400E-9EB0-1EF2F83C2062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154C99D5-5790-400E-9EB0-1EF2F83C2062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154C99D5-5790-400E-9EB0-1EF2F83C2062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A1A909-48BA-4C54-B39F-33AED32875A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A1A909-48BA-4C54-B39F-33AED32875A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A1A909-48BA-4C54-B39F-33AED32875A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A1A909-48BA-4C54-B39F-33AED32875A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1013E447-25A9-4419-A1E2-9B698BB896F2}
+	EndGlobalSection
+EndGlobal

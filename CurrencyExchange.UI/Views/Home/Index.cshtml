@@ -1,0 +1,41 @@
+﻿@using CurrencyExchange.Core.Model
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model OutputCurrencyDto
+
+<div class="wrapper">
+    <header>Currency Converter</header>
+    <form asp-action="Index">
+        <div class="amount">
+            <p>Enter Amount</p>
+            <input asp-for="FirstAmount" class="form-control"/>
+        </div>
+        <div class="drop-list">
+            <div class="from">
+                <p>From</p>
+                <div class="select-box">
+                    <select asp-for="FirstCurrency"
+                            asp-items="@(new SelectList(Model.ComboBoxItems,"Code","Name"))">
+                    </select>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="to">
+                <p>To</p>
+                <div class="select-box">
+                    <select asp-for="LastCurrency"
+                            asp-items="@(new SelectList(Model.ComboBoxItems,"Code","Name"))">
+                    </select>
+                    </div>
+            </div>
+        </div>
+        <div class="exchange-rate">
+            <input value="@Model.LastAmount" class="form-label"/>
+
+        </div>
+        <input type="submit" value="Convert" class="btn btn-primary"/>
+    </form>
+</div>
